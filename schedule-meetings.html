@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sechdule Meeting</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="secdule-meetings">
+        <div class="container card-authntucation-color mt-20 p-20">
+            <div class="head">
+                <div class="d-flex flex-column">
+                    <h3 class="mt-10 p-relative fs-18 primary-color fw-bold">
+                        Schedule Meetings
+                    </h3>
+                    <p class="fs-16 m-10">
+                        View and manage all scheduled meetings with students. Add new
+                        meetings as needed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="responsive-table mb-15">
+                <table class="fs-15 w-full">
+                    <thead>
+                        <tr>
+                            <td>Meeting Title</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Meeting Link</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weekly Check-in</td>
+                            <td>10/10/2025</td>
+                            <td>10:00 AM</td>
+                            <td><a href="#">Join Meeting</a></td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Weekly Check-in</td>
+                            <td>11/10/2025</td>
+                            <td>2:00 PM</td>
+                            <td><a href="#">Join Meeting</a></td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-20 p-25">
+                <h4 class="fs-18 fw-bold mb-10 primary-color">Add New Meeting</h4>
+                <form class="row g-3">
+                    <div class="col-lg-12">
+                        <label for="meetingTitle" class="form-label">Meeting Title</label>
+                        <input type="text" class="form-control" id="meetingTitle" placeholder="Enter meeting title" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="meetingDate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="meetingDate" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="meetingTime" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="meetingTime" />
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="meetingLink" class="form-label">Meeting Link</label>
+                        <input type="url" class="form-control" id="meetingLink" placeholder="Paste the meeting link" />
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <button type="submit" class="btn main-btn mt-3 join-meeting-btn">
+                            Join Meeting
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/supervisordashboard.js"></script>
+</body>
+
+</html>

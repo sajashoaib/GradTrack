@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supervisor Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="dashboard-supervisor-dashboard">
+    <div class="head bg-white p-20 d-flex align-items-center justify-content-between primary-color">
+      <div class="d-flex align-items-center">
+        <h3 class="text-center p-relative mb-0 fs-sm-20">Hello,</h3>
+        <span class="fs-20 m-lr-5 fs-sm-16">Prof Name</span>
+      </div>
+      <i class="fa-solid fa-right-from-bracket fa-fw fs-20"></i>
+    </div>
+
+    <div class="dashboard-supervisor-content">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" data-tab="all-projects.html" href="#">All Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-tab="completed-projects.html">Completed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-tab="schedule-meetings.html">schedule Meetings</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="search-container">
+                <input class="form-control me-2 search-input" type="search" placeholder="Search for a student"
+                  aria-label="Search" />
+                <i class="fas fa-search search-icon"></i>
+                <!-- أيقونة البحث -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- هون بتحط div عرض المحتوى -->
+      <div id="tab-content-area" class="p-3"></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/supervisordashboard.js"></script>
+</body>
+
+</html>

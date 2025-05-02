@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grad Track</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="auth-card card-authntucation-color sign-up-card">
+        <img src="assets/logo1-1.png" alt="GradTrack Logo" class="mb-15" />
+        <h3 class="fs-20 fw-700 mb-20 primary-color">Sign Up to GradTrack</h3>
+        <form id="signupForm">
+            <div class="d-flex justify-content-between align-items-center signup-inputs-container">
+                <div class="flex-grow-1 me-2">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-user primary-color mr-10"></i>
+                        <input type="text" id="std-name" name="std-name" placeholder=" User Name" />
+                    </div>
+                    <p id="std-name-error"></p>
+                </div>
+
+                <div class="flex-grow-1">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-phone primary-color mr-10"></i>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder=" Phone Number" />
+                    </div>
+                    <p id="phone-number-error"></p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center signup-inputs-container">
+                <div class="flex-grow-1 me-2">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-university primary-color mr-10"></i>
+                        <input type="text" id="university-number" name="university-number"
+                            placeholder="University Number" />
+                    </div>
+                    <p id="university-number-error"></p>
+                </div>
+
+                <div class="flex-grow-1">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-envelope primary-color mr-10"></i>
+                        <input type="email" id="std-email" name="std-email" placeholder="example@example.com" />
+                    </div>
+                    <p id="std-email-error"></p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center signup-inputs-container">
+                <div class="flex-grow-1 me-2">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-lock primary-color mr-10"></i>
+                        <input type="password" id="password" name="password" placeholder="Password" />
+                        <i id="toggle-password" class="fa-solid fa-eye-slash primary-color ml-10 toggle-password"></i>
+                        <!-- أيقونة العين -->
+                    </div>
+                    <p id="password-error"></p>
+                </div>
+
+                <div class="flex-grow-1">
+                    <div class="input-container d-flex align-items-center mb-15 p-10">
+                        <i class="fa-solid fa-lock primary-color mr-10"></i>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                            placeholder="Confirm Password" />
+                        <i id="toggle-password" class="fa-solid fa-eye-slash primary-color ml-10 toggle-password"></i>
+                        <!-- أيقونة العين -->
+                    </div>
+                    <p id="confirm-password-error"></p>
+                </div>
+            </div>
+            <div>
+                <div class="form-check d-flex align-items-center gap-1">
+                    <input type="checkbox" class="form-check-input" id="check-input" name="check-input" />
+                    <label class="form-check-label">I agree to the Terms and Conditions</label>
+                </div>
+                <p id="check-input-error"></p>
+            </div>
+
+            <button type="submit" class="btn-login primary-color p-10 fs-18 white-color">
+                Login
+            </button>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

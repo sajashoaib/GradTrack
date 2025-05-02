@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grad Track</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="dashboard-page-container d-flex">
+    <div class="sidebar card-authntucation-color p-20 p-relative">
+      <div class="menua-contant d-flex align-items-center justify-content-between">
+        <h3 class="text-center mt-10 p-relative fs-18">Student Dashboard</h3>
+        <i class="fa-solid fa-bars" id="toggleSidebar"></i>
+      </div>
+
+      <ul lass="d-flex flex-column ">
+        <li>
+          <a class="sidebar-link active d-flex align-items-center fs-16 primary-color p-10" href="#"
+            data-page="studentdashboard">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span class="sidebar-text">Dashboard</span>
+            <span class="custom-tooltip">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="sidebar-dropdown">
+          <a href="#" class="sidebar-link d-flex align-items-center fs-16 primary-color p-10">
+            <i class="fa-solid fa-file-lines fa-fw"></i>
+            <span class="sidebar-text">Project Details</span>
+            <i class="fa-solid fa-chevron-right arrow-icon ms-auto"></i>
+            <span class="custom-tooltip">Project Details</span>
+            <!-- Tooltip هنا -->
+          </a>
+          <ul class="sidebar-submenu">
+            <li>
+              <a href="#" class="sidebar-link d-flex align-items-center fs-14" data-page="projectdetalis">
+                <i class="fa-regular fa-file-lines me-2"></i>
+                <!-- أيقونة ملف -->
+                <span>Project Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link d-flex align-items-center fs-14" data-page="projectphase">
+                <i class="fa-solid fa-diagram-project me-2"></i>
+                <span>Project Phases</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="sidebar-link d-flex align-items-center fs-16 primary-color p-10" href="projects.html"
+            data-page="mymeetings-student">
+            <i class="fa-solid fa-calendar-days fa-fw"></i>
+            <span class="sidebar-text">Meetings & Schedule</span>
+            <span class="custom-tooltip">Meetings & Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-link d-flex align-items-center fs-16 primary-color p-10" href="#" data-page="finalproject">
+            <i class="fa-solid fa-circle-plus fa-fw"></i>
+            <span class="sidebar-text">Add Final Project</span>
+            <span class="custom-tooltip">Add Final Project</span>
+          </a>
+        </li>
+        <li class="mt-auto logout">
+          <a class="sidebar-link d-flex align-items-center fs-16 p-10" href="login.html">
+            <i class="fa-solid fa-right-from-bracket fa-fw"></i>
+            <span class="sidebar-text">Logout</span>
+            <span class="custom-tooltip">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="head bg-white p-20 d-flex align-items-center primary-color">
+        <h3 class="text-center p-relative mb-0 fs-sm-20">Welcome,</h3>
+        <span class="fs-20 m-lr-5 fs-sm-16">Saja Abu Shoaib !</span>
+      </div>
+      <div class="main-sections"></div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/studentdashboard.js"></script>
+</body>
+
+</html>

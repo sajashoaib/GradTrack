@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Completed Projects</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="completed-projects">
+        <div class="container card-authntucation-color mt-20 p-20">
+            <div class="head">
+                <div class="d-flex flex-column">
+                    <h3 class="mt-10 p-relative fs-18 primary-color fw-bold">
+                        Completed Projects
+                    </h3>
+                    <p class="fs-16 m-10">
+                        View finalized graduation projects with detailed information.
+                    </p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 search" type="search"
+                            placeholder="Search by project name or student name" aria-label="Search" />
+                        <button class="btn main-btn" type="submit">Search</button>
+                    </form>
+                    <div class="dropdown mt-20">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Filter by Final Grade
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="responsive-table mb-15">
+                <table class="fs-15 w-full">
+                    <thead>
+                        <tr>
+                            <td>Project Name</td>
+                            <td>Student Name</td>
+                            <td>Final Grade</td>
+                            <td>Completion Date</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--  هاد ستايتك ولازم يتغير لداينمك لون البروقرس بار ولون نص الستيتس -->
+                        <tr>
+                            <td>Web Application Development</td>
+                            <td>Alice Johnson</td>
+                            <td>A</td>
+                            <td>12/05/2025</td>
+                            <td class="primary-color">View Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Machine Learning Model</td>
+                            <td>Bob Smith</td>
+                            <td>B</td>
+                            <td>15/05/2025</td>
+                            <td class="primary-color">View Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Web Application Development</td>
+                            <td>Charlie Brown</td>
+                            <td>A</td>
+                            <td>20/05/2025</td>
+                            <td class="primary-color">View Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/supervisordashboard.js"></script>
+</body>
+
+</html>
