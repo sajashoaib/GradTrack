@@ -26,34 +26,26 @@
     </div>
 
     <div class="dashboard-supervisor-content">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" data-tab="all-projects.html" href="#">All Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-tab="completed-projects.html">Completed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-tab="schedule-meetings.html">schedule Meetings</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <div class="search-container">
-                <input class="form-control me-2 search-input" type="search" placeholder="Search for a student"
-                  aria-label="Search" />
-                <i class="fas fa-search search-icon"></i>
-                <!-- أيقونة البحث -->
-              </div>
-            </form>
-          </div>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid flex-wrap">
+          <ul class="navbar-nav d-flex flex-row flex-wrap gap-4 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" data-tab="all-projects.html" href="#">All Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-tab="completed-projects.html" href="#">Completed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-tab="schedule-meetings.html" href="#">Schedule Meetings</a>
+            </li>
+          </ul>
+
+          <form class="d-flex ms-auto mt-2 mt-md-0" role="search">
+            <div class="search-container">
+              <input class="form-control me-2 search-input" type="search" placeholder="Search for a student" />
+              <i class="fas fa-search search-icon"></i>
+            </div>
+          </form>
         </div>
       </nav>
 
